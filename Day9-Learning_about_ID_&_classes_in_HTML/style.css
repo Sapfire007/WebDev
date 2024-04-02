@@ -1,0 +1,21 @@
+.red              /* class is denoted by writing . in front of the class name */
+{
+    color: red;
+}
+
+.bg-yellow 
+{
+    background-color: yellow;
+}
+
+
+#firstDiv
+{
+   /* background-color: red;    */
+}
+
+#secondDiv
+{
+   color: blue;
+}
+/* ID has higher priority than class */
