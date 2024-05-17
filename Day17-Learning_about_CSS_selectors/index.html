@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+    /*Element selector*/ 
+        div {
+            background-color: gold;
+        }
+
+    /*Class selector*/    
+        .red {
+            background-color: red;
+        }
+    
+    /*ID selector*/
+    #green {
+        background-color: green;
+        }
+
+    /*Child selector*/
+    div > p {
+        color: coral;
+        background-color: darkslategray;
+    }
+
+    /* Descendant selector */
+    article p{
+        background-color: black;
+        color: cyan;
+    }
+
+    /*Universal selector*/
+    * {
+        margin: 5px;
+        padding: 5px;
+
+    }
+
+    /* Pseudo selector */
+    a:visited{
+        color: hotpink;
+    }
+    a:link{
+        color: springgreen;
+    }
+    a:active{
+        background-color: black;
+    }
+    a:hover{
+        background-color: yellowgreen;
+    }
+
+
+    
+    span > a:hover{
+        text-decoration: none;
+        color: inherit;
+        background-color: transparent;
+    }
+    </style>
+</head>
+<body>
+    <div class="red">
+        This is within div tag
+    </div>
+    <div>
+        This is another div which is independent of any class
+    </div>
+    <p id="green">
+        This is within paragrah tag
+    </p>
+    <div>
+        This is another div which is independent of any class
+        <p>
+            This is in a paragraph tag which is within a div tag
+        </p>
+    </div>
+    <div>
+        This is another div which is independent of any class
+        <aside>
+            <p>
+                This is in a paragraph tag which is within an aside tag which is again within a div tag
+                <!--No changes to this p tag because p is directly not a child tag of the div tag-->
+            </p>
+        </aside>
+    </div>
+    <article>
+        <div>
+            <aside>
+                <p>
+                    This is in a paragraph tag which is within an aside tag which is again within a div tag which is again within an article tag
+                </p>
+            </aside>
+        </div>
+    </article>
+    <span id="green">
+        This is within span tag
+    </span>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+    <a href="https://www.poki.com" target="_blank">Play Games online</a>
+    <span><a href="1stChildPseudoSelector.html" target="_blank" class="buttonhover"><button>Next Page</button></a></span>
+</body>
+</html>
