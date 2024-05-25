@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid red;
+            display: inline;
+            padding: 45px;
+            margin: 34px;
+        }
+
+        .box2 {
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            width: 23px;
+        }
+
+        .box3 {
+            display: none;
+        }
+
+        .box4 {
+            visibility: hidden;
+        }
+
+        .box5 {
+            display: block;
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+
+        ul.parent {
+            display: flex;
+            background-color: greenyellow;
+            padding: 0px;
+        }
+
+        li {
+            background: skyblue;
+            border: 1px solid black;
+            padding: 12px;
+            margin: 8px;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="box">
+        also a nice box.
+    </div>
+
+    <span>I am a good</span>
+    <span>boy</span>
+
+    <br><br><br><br>
+
+    <div class="box2">
+        I am another box
+    </div>
+    <div class="box2">
+        also nice as well
+    </div>
+
+    <br><br><br><br>
+
+    <div class="box box3">
+        I am a box
+    </div>
+    <div class="box">
+        also a nice box.
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class="box box4">
+        I am a box
+    </div>
+    <div class="box">
+        also a nice box.
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <span class="box5">
+        Hey this is span A
+    </span>
+    <span class="box5">
+        span B
+    </span>
+    <span class="box5">
+        span C
+    </span>
+
+    <br><br>
+
+    <ul class="parent">
+        <li>Home</li>
+        <li>About</li>
+        <li>Gallery</li>
+        <li>Blogs</li>
+        <li>Contact</li>
+    </ul>
+
+</body>
+
+</html>
