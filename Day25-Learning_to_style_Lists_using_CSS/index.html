@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        nav ul li {
+            list-style: devanagari;
+            background-color: khaki;
+            list-style-position: inside;
+            border: 2px solid black;
+        }
+        .type2 > ul > li {
+            list-style-position: inside;
+            list-style-image: url("https://www.ddesignerr.com/wp-content/uploads/2012/05/029.gif");
+            background-color: transparent;
+        }
+        .type3 > ul > li {
+            list-style-position: inside;
+            list-style-type: "⭐";
+            background-color: transparent;
+        }
+        .type4 > ul > li {
+            list-style: none;
+            background-color: transparent;
+            display: inline-flex;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul style="display: flex; padding: 30px;">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <br>
+    <nav class="type2">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <nav class="type3">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <nav class="type4">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
