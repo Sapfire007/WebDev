@@ -1,0 +1,24 @@
+.box {
+    width: 20vw;
+    height: 10vh;
+    border: 2px solid black;
+    overflow: auto;
+    /* If content is overflowing then the scroll bar appears else it remains normal*/
+}
+
+.box2 {
+    border: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 20vw;
+    height: 30vh;
+    text-overflow: ellipsis;
+}
+
+.box3 {
+    border: 2px solid black;
+    overflow: hidden auto; /*overflow: horizontal-scroll vertical-scroll*/
+    width: 25vh;
+    height: 20vh;
+    word-break: break-all;
+}
