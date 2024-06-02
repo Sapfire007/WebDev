@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 80vh;
+    width: 80vw;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.box1 {
+    background-color: thistle;
+}
+
+.box2 {
+    background-color: aquamarine;
+}
+
+.box3 {
+    background-color: crimson;
+    position: fixed;
+    height: 20vh;
+    width: 50vw;
+    top: 250px;
+    left: 245px;
+}
+
+.box4 {
+    background-color: deeppink;
+}
+
+.parent {
+    padding: 43px;
+    margin: 34px;
+    border: 3px solid blue;
+}

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 20vh;
+    width: 80vw;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.box1 {
+    background-color: thistle;
+    position: relative;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: aquamarine;
+    position: relative;
+    top: -50px;
+    left: 75px;
+}
+
+.box3 {
+    background-color: crimson;
+}
+
+.box4 {
+    background-color: deeppink;
+}

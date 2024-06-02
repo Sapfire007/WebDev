@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 20vh;
+    width: 80vw;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.box1 {
+    background-color: thistle;
+    position: absolute;             /* Here <html> tag would have the higest priority to hold position if parent class position was not relative*/
+    top: 0px;
+    left: 2px;
+}
+
+.box2 {
+    background-color: aquamarine;
+}
+
+.box3 {
+    background-color: crimson;
+}
+
+.box4 {
+    background-color: deeppink;
+}
+
+.parent {
+    padding: 43px;
+    margin: 34px;
+    border: 3px solid blue;
+    position: relative;
+    /* Exception : Transform, filter, or  perspective properties can also make an element appear as positioned*/
+    /* transform: translate(0); */
+    /* filter: invert(0); */
+    /* perspective: 0em; */
+}
