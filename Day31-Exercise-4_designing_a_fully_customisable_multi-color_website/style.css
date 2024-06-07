@@ -1,0 +1,33 @@
+:root {
+    --primary-color: red;
+    --text-color: white;
+    --page-bg-color: rgb(255, 180, 195);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--page-bg-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+ul {
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    font-size: 23px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    align-items: center;
+    position: sticky;
+}
+
+ul>li {
+    padding: 0px;
+    padding-right: 30px;
+    background-color: inherit;
+    text-align: center;
+    vertical-align: middle;
+}
