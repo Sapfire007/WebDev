@@ -1,0 +1,17 @@
+img {
+    float: right;
+}
+
+.cards {
+    border: 2px solid black;
+    display: flow-root;    /*Fitting the overflown media within its container.*/
+}
+
+.card {
+    border: 2px solid red;
+}
+
+.card:nth-child(3) {
+    background-color: aqua;
+    clear: right;          /*Removes any content interfering in the right*/
+}
