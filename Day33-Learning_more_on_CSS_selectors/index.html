@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: yellow;
+        }
+        .box::first-line {
+            color: red;
+        }
+        .boxes *{
+            border: 5px solid greenyellow;
+        }
+        [data-margin="primary"] {
+            margin-top: 45px;
+            padding: 25px;
+        }
+        .box:nth-child(even) {
+            text-decoration: line-through;
+        }
+        .box:nth-last-child(1) {
+            text-decoration: overline;
+        }
+        .boxes::before{
+            content: "Hey this is Sap";
+            color: blue;
+        }
+        .boxes::after{
+            content: "I'm from India";
+            background-color: indianred;
+        }
+        ::selection {                                                           /*Important*/
+            color: aqua;
+            background-color: black;
+        }
+        .box::first-letter {
+            color: rgb(187, 0, 255);
+            font-size: 50px;
+        }
+        input::placeholder {
+            color: hotpink;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus, molestias voluptatibus ipsa accusamus nobis vitae consectetur doloremque hic commodi cum. Animi explicabo molestias ullam qui iste quos omnis, incidunt laudantium? Exercitationem aliquid labore mollitia odit quis quod, veritatis ea soluta itaque magnam deserunt velit quas praesentium et sapiente officiis adipisci, facere iusto dicta. Culpa vel ipsam consectetur adipisci placeat vero velit dolores temporibus, facere, beatae sint officia at qui. Nobis asperiores fuga voluptate inventore aliquid commodi voluptatem nisi doloribus esse non, atque quas minima animi, odit ut molestias facere est quaerat, quia unde? Odit optio unde tempora velit incidunt obcaecati corrupti dignissimos repudiandae omnis cumque. Laborum, perspiciatis commodi repellat sunt optio maxime dignissimos. Numquam pariatur consequatur ea laboriosam eius!</div>
+        <div data-margin="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>
