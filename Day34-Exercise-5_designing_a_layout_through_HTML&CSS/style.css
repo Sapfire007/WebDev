@@ -1,0 +1,109 @@
+:root {
+    --pagebgcolor: rgb(0, 0, 0);
+    --navbgcolor: purple;
+    --navtextcolor: rgb(255, 255, 255);
+    --centredivcolor: green;
+    --box1bgcolor: crimson;
+    --box2bgcolor: steelblue;
+    --footrcolor: grey;
+    --bottomdivbordercolor: white;
+    --bottomdivtextcolor: white;
+}
+
+* {
+    background-color: var(--pagebgcolor);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: var(--navbgcolor);
+    color: var(--navtextcolor);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    background-color: inherit;
+    color: inherit;
+    font-size: 36px;
+    height: 70px;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+ul>li:first-child {
+    padding-right: 20px;
+}
+
+ul>li {
+    background-color: inherit;
+    color: var(--navtextcolor);
+    padding-right: 50px;
+}
+
+.centre_portion {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border: 2px solid black;
+    min-height: 600px;
+    background-color: var(--centredivcolor);
+}
+
+.box1 {
+    height: 480px;
+    width: 35%;
+    background-color: var(--box1bgcolor);
+    display: inline-block;
+    margin: 5% 5%;
+    text-overflow: clip;
+    overflow-y: scroll;
+}
+
+.box2 {
+    height: 480px;
+    width: 35%;
+    background-color: var(--box2bgcolor);
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+
+.bottom {
+    text-align: center;
+    font-size: 36px;
+    border: 2px solid var(--bottomdivbordercolor);
+    color: var(--bottomdivtextcolor);
+    margin: 2% 10%;
+    border-radius: 25px;
+    margin-bottom: 7%;
+    background-color: var(--pagebgcolor);
+}
+
+footer {
+    margin: 0;
+    background-color: var(--footrcolor);
+    height: 40px;
+    bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+.fixedIcon {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    border-radius: 100px;
+}
