@@ -1,0 +1,21 @@
+* {
+    margin-top: 5px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+.navicon > img {
+    height: 60px;
+    display: inherit;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
