@@ -1,0 +1,54 @@
+.container {
+    background-color: forestgreen;
+    height: 80vh;
+    width: 30vw;
+}
+
+.box {
+    /* background-color: yellow; */
+    width: 34px;
+    height: 45px;
+    /* animation-name: myfirstanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1.14);
+    animation-delay: 3s;
+    animation-direction: alternate-reverse; */
+    /* animation-play-state: paused; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: myfirstanimation 3s ease-in-out 2s 1 forwards,
+               mysecondanimation 3s ease-in-out 1s 1;
+}
+
+@keyframes myfirstanimation {
+    from {
+        background-color: brown;
+    }
+
+    to {
+        transform: translateX(500%);
+        background-color: aqua;
+    }
+}
+
+@keyframes mysecondanimation {
+    0% {
+        transform: rotate(100deg);
+    }
+
+    20% {
+        transform: rotate(200deg);
+    }
+
+    50% {
+        transform: rotate(250deg);
+    }
+
+    80% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(345deg);
+    }
+}
