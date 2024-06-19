@@ -1,0 +1,17 @@
+.container {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+    background-image: url("https://images.wondershare.com/filmora/article-images/pixabay-image.jpg");
+    background-position: center center;
+}
+.container2 {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+    background-image: url("https://images.huffingtonpost.com/2010-06-08-bear.jpg");
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-position: center center;
+}

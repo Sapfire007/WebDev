@@ -1,0 +1,64 @@
+/* Refer to the original image for better preference */
+.container {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+}
+.container > img {
+    height: 634px; /* Here height and width will directly refect to the height and width or space reflected by the container div */
+    width: 688px;
+    object-fit: cover;
+}
+.container2 {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+}
+.container2 > img {
+    height: 634px;
+    width: 688px;
+    object-fit: contain; /* This will fit the entire image within the alloted resolution maintaining the original image resolution*/
+}
+.container3 {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+}
+.container3 > img {
+    height: 634px;
+    width: 688px;
+    object-fit: cover; /* This will fit the entire image within the alloted resolution */
+    object-position: top left; /* Which side to be focused/prioritized */
+}
+.container4 {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+}
+.container4 > img {
+    height: 634px;
+    width: 688px;
+    object-fit: fill; /* This will fit the entire image within the alloted resolution changing the image resolution to the resolution of the container div*/
+}
+.container5 {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+}
+.container5 > img {
+    height: 634px;
+    width: 688px;
+    object-fit: contain;
+    object-position: 10px 30px;
+}
+.container6 {
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+}
+.container6 > img {
+    height: 634px;
+    width: 688px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
