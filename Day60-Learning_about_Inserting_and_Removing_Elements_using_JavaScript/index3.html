@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container boxWorld boxHolder red">
+        <div class="box" style="display: flex;" data-createdby="Saptarshi" data-override=false>Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+    <script>
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend","<b>This will be inserted after the end of the class: \"container\"</b>");
+        cont.insertAdjacentHTML("afterbegin","<b>This will be inserted after the beginning of the class: \"container\"</b>");
+
+        document.querySelector(".box").remove();
+        console.log(document.querySelector(".container").classList);
+        console.log(document.querySelector(".container").className);
+        document.querySelector(".container").classList.add("Sap");
+        console.log(document.querySelector(".container").classList);
+        document.querySelector(".container").classList.remove("boxWorld");
+        console.log(document.querySelector(".container").classList);
+        //run the syntaxes given below in the console tab of a browser to observe the changes
+        document.querySelector(".container").classList.toggle("red");
+        document.querySelector(".container").classList.toggle("red");
+        document.querySelector(".container").classList.toggle("red");
+        document.querySelector(".container").classList.toggle("red");
+        
+    </script>
+</body>
+</html>

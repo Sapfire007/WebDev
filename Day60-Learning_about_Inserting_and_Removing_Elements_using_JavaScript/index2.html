@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="display: flex;" data-createdby="Saptarshi" data-override=false>Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML = "I have been created through Js <b>by Saptarshi</b>"
+        div.setAttribute("class","created");
+        document.querySelector(".container").append(div);
+
+        let div1 = document.createElement("div");
+        div1.innerHTML = "I have been created through Js <b>by Sap</b>"
+        div1.setAttribute("class","created1");
+        document.querySelector(".container").before(div1);
+
+        let div2 = document.createElement("div");
+        div2.innerHTML = "I have been created through Js <b>by Saptarshi07</b>"
+        div2.setAttribute("class","created");
+        document.querySelector(".container").prepend(div2);
+
+        let div3 = document.createElement("div");
+        div3.innerHTML = "I have been created through Js <b>by Sap007</b>"
+        div3.setAttribute("class","created");
+        document.querySelector(".container").after(div3);
+
+        // Example for node.replaceWith()
+        let newDiv = document.createElement("div");
+        newDiv.innerHTML = "I am a <b>newly replaced</b> Box!";
+        newDiv.setAttribute("class", "replaced");
+
+        // Replacing the first .box element
+        let firstBox = document.querySelector(".box");
+        firstBox.replaceWith(newDiv);
+    </script>
+</body>
+</html>
